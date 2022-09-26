@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdvancedCalculator"
+    android:orientation="vertical"
+    android:background="#423E3F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvResultAd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Result"
+            android:textSize="60dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#E8F5E9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnClearAd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="CE"
+            android:textSize="30dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:backgroundTint="@color/gray_dark"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:layout_margin="10dp"
+        android:background="#FFD54F">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/gray_dark"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:text="7"
+                android:textSize="50sp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btn7"
+                android:onClick="btnFuntion"/>
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="0dp"
+                android:text="8"
+                android:textSize="50sp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btn8"
+                android:onClick="btnFuntion"/>
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="9"
+                android:textSize="50sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btn9"
+                android:onClick="btnFuntion"/>
+
+            <Button
+                android:id="@+id/btnDivideAd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="/"
+                android:textSize="40sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btnDivideAd"
+                android:onClick="btnFuntion"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/gray_dark"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="4"
+                android:textSize="50sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btn4"
+                android:onClick="btnFuntion"/>
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:textSize="50sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btn5"
+                android:onClick="btnFuntion"/>
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:textSize="50sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btn6"
+                android:onClick="btnFuntion"/>
+
+            <Button
+                android:id="@+id/btnMultiplyAd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="x"
+                android:textSize="30sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btnMultiplyAd"
+                android:onClick="btnFuntion"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/gray_dark"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:textSize="50sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btn1"
+                android:onClick="btnFuntion"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:textSize="50sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btn2"
+                android:onClick="btnFuntion"/>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:textSize="50sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btn3"
+                android:onClick="btnFuntion"/>
+
+            <Button
+                android:id="@+id/btnMinusAd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textSize="50sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btnMinusAd"
+                android:onClick="btnFuntion"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/gray_dark"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btnDotAd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="."
+                android:textSize="50sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btnDotAd"
+                android:onClick="btnFuntion"/>
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="50sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btn0"
+                android:onClick="btnFuntion"/>
+
+            <Button
+                android:id="@+id/btnEqualAd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="="
+                android:textSize="50sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btnEqualAd"
+                android:onClick="btnFuntion"/>
+
+            <Button
+                android:id="@+id/btnPlusAd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textSize="50sp"
+                android:backgroundTint="#646D77"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:tag="btnPlusAd"
+                android:onClick="btnFuntion"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
