@@ -24,8 +24,6 @@ class AdvancedCalculator : AppCompatActivity() {
         setContentView(R.layout.activity_advanced_calculator)
 
         operat = 0
-
-
         var tvResultAd = findViewById<TextView>(R.id.tvResultAd)
         var btnEqualAd = findViewById<Button>(R.id.btnEqualAd)
         var tvPrevResult = findViewById<TextView>(R.id.tvPrevResult)
@@ -33,7 +31,6 @@ class AdvancedCalculator : AppCompatActivity() {
         var btnMultiplyAd = findViewById<Button>(R.id.btnMultiplyAd)
         var btnMinusAd = findViewById<Button>(R.id.btnMinusAd)
         var btnPlusAd = findViewById<Button>(R.id.btnPlusAd)
-        var tvNotVisibleAd = findViewById<TextView>(R.id.tvNot)
 
         tvResultAd.text = ""
         btnEqualAd.setOnClickListener{
@@ -83,7 +80,6 @@ class AdvancedCalculator : AppCompatActivity() {
                 }
             }
         }
-
     }
 
 

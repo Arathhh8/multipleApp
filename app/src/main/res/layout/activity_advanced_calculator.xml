@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".AdvancedCalculator"
     android:orientation="vertical"
-    android:background="#423E3F">
+    android:background="#F6F5F5">
 
     <LinearLayout
         android:layout_width="match_parent"
