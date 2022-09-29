@@ -11,11 +11,6 @@ class PersonalAdministration : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_personal_administration)
 
-        var tvWelcome = findViewById<TextView>(R.id.tvWelcome)
-        var etName = findViewById<EditText>(R.id.etName)
-        var etSurname = findViewById<EditText>(R.id.etSurname)
-        var etEmail = findViewById<EditText>(R.id.etEmail)
-        var etCellphone = findViewById<EditText>(R.id.etCellphone)
         var btnRegistered = findViewById<Button>(R.id.btnRegistered)
         var npDateDay = findViewById<NumberPicker>(R.id.npDateDay)
         var npDateMonth = findViewById<NumberPicker>(R.id.npDateMonth)
@@ -70,15 +65,11 @@ class PersonalAdministration : AppCompatActivity() {
     }
 
     private fun missingDate(){
-        var tvWelcome = findViewById<TextView>(R.id.tvWelcome)
         var etName = findViewById<EditText>(R.id.etName)
         var etSurname = findViewById<EditText>(R.id.etSurname)
         var etEmail = findViewById<EditText>(R.id.etEmail)
         var etCellphone = findViewById<EditText>(R.id.etCellphone)
-        var btnRegistered = findViewById<Button>(R.id.btnRegistered)
-        var npDateDay = findViewById<NumberPicker>(R.id.npDateDay)
-        var npDateMonth = findViewById<NumberPicker>(R.id.npDateMonth)
-        var npDateYear = findViewById<NumberPicker>(R.id.npDateYear)
+
 
         if(etName.text.isEmpty() ){
             Toast.makeText(this,"Missing name user",Toast.LENGTH_SHORT).show()

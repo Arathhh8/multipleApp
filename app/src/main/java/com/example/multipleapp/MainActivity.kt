@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.NumberPicker
 
-class MainActivity : AppCompatActivity() {
+class   MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

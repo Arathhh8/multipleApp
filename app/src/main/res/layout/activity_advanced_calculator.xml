@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,18 +12,39 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="220dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:weightSum="1">
 
         <TextView
             android:id="@+id/tvResultAd"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:hint="Result"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="0"
             android:textSize="60dp"
-            android:gravity="center"
-            android:layout_weight="1"
+            android:gravity="start|center"
+            android:layout_weight="0.6"
             android:background="#E8F5E9"/>
+
+        <TextView
+            android:id="@+id/tvNot"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="0"
+            android:textSize="20dp"
+            android:gravity="start|center"
+            android:layout_weight="0.0"
+            android:background="#E8F5E9"/>
+
+        <TextView
+            android:id="@+id/tvPrevResult"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="0"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:gravity="center|end"
+            android:layout_weight="0.3"
+            android:background="#AACCAD"/>
 
     </LinearLayout>
 
@@ -40,7 +62,9 @@
             android:textSize="30dp"
             android:layout_gravity="end"
             android:layout_weight="1"
-            android:backgroundTint="@color/gray_dark"/>
+            android:backgroundTint="@color/gray_dark"
+            android:tag="btnCE"
+            android:onClick="btnFuntion"/>
 
     </LinearLayout>
 
